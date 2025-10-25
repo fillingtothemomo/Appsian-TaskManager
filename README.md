@@ -1,13 +1,13 @@
-# Basic Task Manager (Ready-to-run)
+# Task Manager assignment for Appsian tech 
 
-This archive contains:
-- `backend/` — .NET 8 Web API (in-memory storage)
-- `frontend/` — Vite + React + TypeScript app (uses localStorage)
+Deployed here :https://appsian-task-manager-sdvk.vercel.app/
 
-## Defaults chosen
-- Backend base URL: http://localhost:5000
-- Frontend dev server: http://localhost:5173
-- Frontend package manager: npm
+<img width="1076" height="810" alt="image" src="https://github.com/user-attachments/assets/d3b002da-8ccb-454d-b846-64d4ee85b098" />
+<img width="1021" height="716" alt="image" src="https://github.com/user-attachments/assets/15e6eb76-309d-48fd-9c57-b695ceb2ff8f" />
+<img width="987" height="660" alt="image" src="https://github.com/user-attachments/assets/a1355477-225e-4fb0-9391-c30b49e2aa52" />
+
+
+
 
 ## Run backend
 1. Ensure .NET 8 SDK is installed.
@@ -16,8 +16,6 @@ This archive contains:
    dotnet restore
    dotnet run
    ```
-   The API will listen on the port shown in the console (default Kestrel port is often 5000/5001).
-
 API endpoints:
 - GET /api/tasks
 - POST /api/tasks  (body: { "description": string, "isCompleted": bool })
@@ -30,8 +28,5 @@ API endpoints:
 3. Start dev server: `npm run dev`
 4. Open the URL shown by Vite (default http://localhost:5173)
 
-The frontend will attempt to call `http://localhost:5000/api`. If your backend runs on a different port, edit `frontend/src/api.ts` and change the baseURL.
-
-## Notes
-- The backend is in-memory; restarting it clears server-side tasks. The frontend persists a copy in localStorage under key `taskmanager.tasks.v1`.
-- The app is intentionally minimal to keep it easy to run and inspect. Feel free to request enhancements (filtering, Tailwind styling, Dockerfile, CI config, etc.).
+Made by Angel Sharma
+Enrollment:22323005
