@@ -1,0 +1,16 @@
+# Render service manifest - deploy the backend as a Docker web service
+services:
+  - type: web_service
+    name: task-manager-backend
+    env: docker
+    region: oregon
+    branch: master
+    plan: free
+    dockerfilePath: backend/Dockerfile
+    # If you prefer a different port, Render will provide $PORT at runtime.
+    # You can also set environment variables below under `envVars`.
+    envVars: []
+
+# Notes:
+# - Push this repo to GitHub, then create a Render service (from the Render dashboard)
+#   and select this repository. Render will use this manifest to configure the service.
